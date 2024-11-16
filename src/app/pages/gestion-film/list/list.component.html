@@ -1,0 +1,45 @@
+<table class="table-responsive table table-striped table table-bordered border-primary" style="width: 150%;">
+    <thead>
+        <tr>
+            <th scope="col">ID</th>
+            <th scope="col">Titre</th>
+            <th scope="col">Autheur</th>
+            <th scope="col">Date de sortie</th>
+            <th scope="col">Minutes</th>
+            <th scope="col">Categorie</th>
+
+            <th>Action</th>
+    </thead>
+    <tbody>
+        <tr *ngFor="let c of listfilm">
+
+            <td>{{c.id}}</td>
+            <td>{{c.title}}</td>
+            <td>{{c.author}}</td>
+            <td>{{c.outDate}}</td>
+            <td>{{c.time}}</td>
+            <td>{{c.categories}}</td>
+
+            <td>
+
+                <div class="row ">
+                    <div class="col ">
+                        <button (click)="oneUpdate(c) " class=" btn btn-sm fa fa-edit btn-outline-info " href="/pages/film/edit ">Update</button>
+                    </div>
+                    <div class=" col ">
+                        <button (click)="oneDelete(c.id) " class="btn-sm btn btn-sm fa fas fa-remove btn-outline-danger ">Delete</button>
+                    </div>
+
+                </div>
+
+            </td>
+
+
+
+
+        </tr>
+
+    </tbody>
+
+
+</table>

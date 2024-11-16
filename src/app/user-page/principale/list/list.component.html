@@ -1,0 +1,32 @@
+<table class="table-responsive table table-striped  border-primary">
+    <thead>
+        <tr>
+            <th scope="col">ID</th>
+            <th scope="col">Titre</th>
+            <th scope="col">Autheur</th>
+            <th scope="col">Date de sortie</th>
+            <th scope="col">Minutes</th>
+            <th scope="col">Categorie</th>
+    </thead>
+    <tbody>
+        <tr *ngFor="let c of listfilm">
+
+            <td>{{c.id}}</td>
+            <td>{{c.title}}</td>
+            <td>{{c.author}}</td>
+            <td>{{c.outDate}}</td>
+            <td>{{c.time}}</td>
+            <td>{{c.categories}}</td>
+            <td>
+
+
+            </td>
+
+
+
+        </tr>
+
+    </tbody>
+
+
+</table>
