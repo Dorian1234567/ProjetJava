@@ -1,0 +1,46 @@
+<div class="mr-auto container-fluid p-2 bg-cyan fg-white" style="width: 950px">
+    <div class="row mt-2">
+        <div class="col-8 ">
+
+
+            <div class="row">
+                <div class="main-header">
+
+                </div>
+            </div>
+            <!-- 4-blocks row start -->
+            <div class="row dashboard-header">
+                <div class="col-lg-3 col-md-6">
+
+                    <div class="mr-auto container-fluid p-2 bg-cyan fg-white" style="width: 1000px">
+
+                        <div class="bootstrap-table">
+                            <div class="row mt-2">
+                                <div class="col-8 ">
+                                    <div class="mr-auto container-fluid p-2 bg-cyan fg-white" style="width: 950px">
+                                        <div class="row mt-2">
+                                            <div class="col-8 ">
+                                                <h1>film </h1>
+
+                                            </div>
+                                        </div>
+                                        <form [formGroup]="filmForm" (ngSubmit)="submit()">
+                                            <div class="form-group">
+                                                <label for="title">Title</label>
+                                                <input formControlName="title" type="text" id="title" class="form-control" placeholder="Enter title...">
+
+                                                <label for="author">Author</label>
+                                                <input formControlName="author" type="text" id="author" class="form-control" placeholder="Enter author...">
+
+                                                <label for="outDate">Out Date</label>
+                                                <input formControlName="outDate" type="date" id="outDate" class="form-control" placeholder="Select date...">
+
+                                                <label for="time">Time</label>
+                                                <input formControlName="time" type="text" id="time" class="form-control" placeholder="Enter time...">
+
+                                                <label for="categories">Categories</label>
+                                                <input type="text" id="categories" formControlName="categories" placeholder="Entrer">
+                                            </div>
+
+                                            <button class="btn btn-outline-primary mt-3 btn-sm">Ajouter</button>
+                                        </form>

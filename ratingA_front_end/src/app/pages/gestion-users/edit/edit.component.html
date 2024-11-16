@@ -1,0 +1,22 @@
+<h5>Modification des informations des utilisateurs correspondantes</h5>
+<form [formGroup]="usersForm" (ngSubmit)="submit()">
+    <div class="form-group">
+
+        <label for="Users">firstName</label>
+        <input formControlName="firstName" type="text" id="Users" class="form-control" placeholder="Saisir..">
+        <label for="Users">lastName</label>
+        <input formControlName="lastName" type="text" id="Users" class="form-control" placeholder="Saisir..">
+        <label for="Users">email</label>
+        <input formControlName="email" type="text" id="Users" class="form-control" placeholder="Saisir..">
+        <label for="Users">role </label>
+        <input formControlName="role" type="text" id="Users" class="form-control" placeholder="Saisir..">
+        <label for="Users">birthdate</label>
+        <input formControlName="birthdate" type="datetime-local" id="Users" class="form-control" placeholder="Saisir..">
+        <label for="Users">sex</label>
+        <input formControlName="sex" type="text" id="Users" class="form-control" placeholder="Saisir..">
+        <label for="Users">password</label>
+        <input formControlName="password" type="text" id="Users" class="form-control" placeholder="Saisir..">
+        <button class="btn btn-outline-primary mt-3 btn-sm "> Ajouter</button>
+    </div>
+
+</form>
